@@ -1,0 +1,161 @@
+
+@use 'variables' as var
+
+.App
+        padding: .5em
+        width: 100vw
+
+.search-bar
+        margin: auto
+        label
+                font-size: 2em
+
+        .is-primary
+                font-size: 1.4em
+
+        button
+                margin-top: 1.4em
+                font-size: 1.5em
+
+.FoodForm
+        .label
+                font-size: 1.3em
+        input
+                font-size: 2em
+                background: black
+                color: white
+                margin-bottom: .8em
+
+        .is-link
+                font-size: 1.5em
+
+.ctn-total
+
+        height: max-content
+        align-content: center
+        flex-direction: column
+        background-color: black
+        color: #ffffff
+        font-size: 1.5em
+        border-radius: 1em
+        h3
+
+                font-size: 1.5em
+
+                padding: .3em
+        p
+                font-size: .6em
+                font-weight: 100
+        button
+                margin-top: 10px
+                width: 80%
+                height: 2em
+                padding: 0
+        .button.is-small
+                font-size: .7em
+                padding: 0
+        .food-name
+                font-weight: 600
+                font-size: .8em
+.selected-food-list
+        border-top: 1px solid white
+        background-size: cover
+
+.food-list-content
+        position: relative
+        font-size: 1.5em
+        left: -40px
+        width: 50%
+        background: #00000085
+        backdrop-filter: blur(6px)
+        padding: 10px
+        margin-left: 20px
+        color: white
+
+.FoodBox
+
+        font-size: 1.5em
+        height: 3.5em
+        margin-bottom: 40px
+
+        .media-left
+                margin: 0
+                padding-right: .5em
+
+        input
+                width: 50px
+
+        .content
+                display: flex
+                flex-wrap: wrap
+
+        figure
+                display: flex
+                align-content: center
+
+                img
+                        object-fit: contain
+
+@media (min-width: var.$breakpoint-tablet)
+        .App
+                padding: 5em
+        .section
+                display: grid
+                grid-template-columns: 3fr 2fr
+        .FoodForm
+                input
+                        background-color: white
+                        color: black
+
+        .ctn-total
+                font-size: 3em
+
+                h3
+                        width: 30vw
+
+                p
+                        font-size: .7em
+                        font-weight: 100
+                button
+                        width: 70%
+                        height: 1.8em
+                        margin-top: 2em
+
+                .button.is-small
+                        font-size: .5em
+                .food-name
+                        font-weight: 600
+                        font-size: .8em
+                        padding-bottom: .3em
+
+        .FoodBox
+                font-size: 1.8em
+                height: 3.5em
+                width: 100%
+                padding-right: 4em
+
+                .media-left
+                        margin: 0
+                        padding-right: .5em
+
+                input
+                        font-size: 1.3em
+                        width: 10vw
+                        font-weight: 500
+                .is-info
+                        font-size: 1.3em
+
+                .content
+                        display: flex
+                        flex-wrap: wrap
+
+                figure
+                        display: flex
+                        align-content: center
+
+                        .image
+                                width: 200px
+                                .is-64x64
+                                        width: 200px
+
+p
